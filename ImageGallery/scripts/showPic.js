@@ -22,7 +22,7 @@ function insertAfter(newElement, targetElement) {
 }
 
 /*将占位符图片和图片描述的元素添加到文档里面*/
-/*function preparePlaceholder() {
+function preparePlaceholder() {
     if (!document.createElement) return false;
     if (!document.createTextNode) return false;
     if (!document.getElementById) return false;
@@ -40,7 +40,7 @@ function insertAfter(newElement, targetElement) {
     var gallery = document.getElementById("imagegallery");
     insertAfter(placeholder,gallery);                                 //将占位符图片添加到四张小图片的ul后面
     insertAfter(description,placeholder);                             //将图片描述添加到占位符图片后面
-}*/
+}
 
 /*点击链接行为*/
 function prepareGallery() {
@@ -81,5 +81,5 @@ function showPic(whichpic) {
 }
 
 /*调用顺序*/
-//addLoadEvent(preparePlaceholder());
+addLoadEvent(preparePlaceholder());
 addLoadEvent(prepareGallery());
