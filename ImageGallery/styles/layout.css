@@ -35,6 +35,8 @@ li {
 
 #imagegallery li {
     display: inline;
+    width: 104px;
+    height: 79px;
 }
 
 #imagegallery li a img:hover {
@@ -45,6 +47,7 @@ li {
     border: 0;
     width: 100px;
     height: 75px;
+    border: 2px solid transparent;
 }
 
 #placeholder {
